@@ -78,11 +78,16 @@ ADD ARCHITECTURE IMAGE
 # Stratified K-Fold Cross-Validation 
 To ensure robustness and reduce bias due to class imbalance, 5-fold stratified k-fold cross-validation is employed:
 - The training data is split into 5 folds while preserving class distribution.
-- In each fold, four folds are used for training and one fold is used for validation.
+- In each fold, four folds are used for training, and one fold is used for validation.
 - The model is trained for 10 epochs with a batch size of 256 in each fold.
 - Validation accuracy is recorded after each fold.
 
-At the end 
+At the end of cross-validation, the mean validation accuracy is computed as the average of all fold accuracies, providing a reliable estimate of model performance. 
+
+The mean validation accuracy was computed to be 0.97. 
+
+# Validation Split Approach
+
 
 
 
