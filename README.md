@@ -49,5 +49,12 @@ This project aims to design, develop, and deploy an efficient fake news classifi
 
 11. Saving the Preprocessed Data:
 - The training and testing datasets are saved as a serialized file.
-- The trained tokenizer is saved separately to ensure consistent preprocessing during model inference and Gradio deployment. 
+- The trained tokenizer is saved separately to ensure consistent preprocessing during model inference and Gradio deployment.
+
+# Tools: 
+- Jupyter Notebook
+- Gradio
+
+# References: 
+
 
