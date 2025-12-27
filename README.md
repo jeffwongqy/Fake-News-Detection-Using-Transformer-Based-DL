@@ -19,13 +19,13 @@ This project aims to design, develop, and deploy an efficient fake news classifi
 - digital removal
 - removal of punctuation and special characters
 
-2. Class Label Assignment
+2. Class Label Assignment: 
 Class labels are added to both datasets: articles from the TRUE dataset are labeled as "TRUE," and articles from the FAKE dataset are labeled as "FAKE".
 
-3. Dataset Combination
+3. Dataset Combination: 
 The TRUE and FAKE datasets are combined into a single dataset using concatenation. This unified dataset contains cleaned text samples along with their corresponding class labels.
 
-Tokenization: To convert textual data into a numerical form suitable for deep learning models.
+4. Tokenization: To convert textual data into a numerical form suitable for deep learning models.
 - A tokenizer is created with a vocabulary size of 20,000 words.
 - An Out-of-Vocabulary (OOV) token is used to handle unseen words.
 - The tokenizer is fitted on the cleaned text.
@@ -36,6 +36,9 @@ Tokenization: To convert textual data into a numerical form suitable for deep le
 - Sequences shorter than the maximum length are padded with zeros at the end.
 - Longer sequences are truncated to fit the defined length.
 
-6. Label Encoding
-Since class labels are categorical, label encoding is applied to convert both TRUE and FALSE labels into numerical values. The encoder is then fitted on the training labels and applied to the test labels to prevent data leakage. 
+6. Train-Test Split: The dataset is divided into training and testing sets:
+- 80% of the data is used for training, and 20% is reserved for testing.
+- A fixed random state ensures reproducibility. 
+
+9. Label Encoding: Since class labels are categorical, label encoding is applied to convert both TRUE and FALSE labels into numerical values. The encoder is then fitted on the training labels and applied to the test labels to prevent data leakage. 
 
