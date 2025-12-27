@@ -34,7 +34,6 @@ To convert textual data into a numerical form suitable for deep learning models.
 4. Each news article is converted into a sequence of integers representing word indices.
 
 5. Sequence Padding
-
 Since text sequences vary in length, padding is applied to ensure uniform input size:
 - A maximum sequence length of 256 tokens is defined.
 - Sequences shorter than the maximum length are padded with zeros at the end.
