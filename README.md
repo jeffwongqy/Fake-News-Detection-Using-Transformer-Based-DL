@@ -75,7 +75,7 @@ The model is compiled using:
 
 ADD model summary and parameters
 
-# Stratified K-Fold Cross-Validation 
+# Stratified K-Fold Cross-Validation:
 To ensure robustness and reduce bias due to class imbalance, 5-fold stratified k-fold cross-validation is employed:
 - The training data is split into 5 folds while preserving class distribution.
 - In each fold, four folds are used for training, and one fold is used for validation.
@@ -86,7 +86,7 @@ At the end of cross-validation, the mean validation accuracy is computed as the 
 
 The mean validation accuracy was computed to be 0.97. 
 
-# Validation Split Approach
+# Validation Split Approach:
 A validation split approach is also used for comparison: 
 - The same model architecture is trained on the full training dataset.
 - 20% of the training data is automatically reserved for validation during training.
@@ -95,7 +95,7 @@ A validation split approach is also used for comparison:
 
 This approach allows faster experimentation and visualization of learning behaviour while maintaining consistency with the cross-validation results. 
 
-# Model Evaluation 
+# Model Evaluation:
 The performance of the proposed transformer-based fake news classification model was evaluated using standard classification metrics, including precision, recall, F1-score, accuracy, and ROC-AUC. 
 
 (A) Classification Report
@@ -111,7 +111,7 @@ The performance of the proposed transformer-based fake news classification model
 
 ADD SCREENSHOT
 
-# Model Deployment 
+# Model Deployment:
 The trained fake news classification model is deployed using a Gradio web application, providing a simple and interactive interface that allows users to input news text and instantly receive predictions indicating whether the news is FAKE or REAL, thereby demonstrating the model’s practical usability in real-time scenarios.
 
 ADD SCREENSHOT
