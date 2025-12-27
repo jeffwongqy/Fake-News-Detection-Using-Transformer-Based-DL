@@ -20,10 +20,11 @@ This project aims to design, develop, and deploy an efficient fake news classifi
 - removal of punctuation and special characters
 
 2. Class Label Assignment: 
-Class labels are added to both datasets: articles from the TRUE dataset are labeled as "TRUE," and articles from the FAKE dataset are labeled as "FAKE".
+- Class labels are added to both datasets: articles from the TRUE dataset are labeled as "TRUE," and articles from the FAKE dataset are labeled as "FAKE".
 
 3. Dataset Combination: 
-The TRUE and FAKE datasets are combined into a single dataset using concatenation. This unified dataset contains cleaned text samples along with their corresponding class labels.
+- The TRUE and FAKE datasets are combined into a single dataset using concatenation.
+- This unified dataset contains cleaned text samples along with their corresponding class labels.
 
 4. Tokenization:
 - To convert textual data into a numerical form suitable for deep learning models.
