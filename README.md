@@ -106,8 +106,10 @@ The performance of the proposed transformer-based fake news classification model
 - The model achieved an overall classification accuracy of 98%, correctly classifying 7,730 news articles in the test dataset.
 
 (B) ROC-AUC Curve
+- The model achieved a Receiver Operating Characteristic (ROC)–AUC score of 0.996, indicating excellent discrimination capability between fake and real news classes.
+- A ROC–AUC value close to 1.0 signifies that the model performs exceptionally well across different classification thresholds.
 
-
+# Model Deployment 
 
 
 
