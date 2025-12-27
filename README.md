@@ -73,7 +73,7 @@ The model is compiled using:
 - Binary Cross-Entropy loss function, suitable for a binary classification problem.
 - Accuracy as the primary evaluation metric.
 
-ADD ARCHITECTURE IMAGE
+ADD model summary and parameters
 
 # Stratified K-Fold Cross-Validation 
 To ensure robustness and reduce bias due to class imbalance, 5-fold stratified k-fold cross-validation is employed:
@@ -87,7 +87,13 @@ At the end of cross-validation, the mean validation accuracy is computed as the 
 The mean validation accuracy was computed to be 0.97. 
 
 # Validation Split Approach
+A validation split approach is also used for comparison: 
+- The same model architecture is trained on the full training dataset.
+- 20% of the training data is automatically reserved for validation during training.
+- The model is trained for 10 epochs with a batch size of 256.
+- Training and validation accuracy are monitored across epochs.
 
+This approach allows faster experimentation and visualization of learning behaviour while maintaining consistency with the cross-validation results. 
 
 
 
