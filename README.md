@@ -54,6 +54,24 @@ The datasets used in this project were extracted from the ISOT Fake News Detecti
 - The training and testing datasets are saved as a serialized file.
 - The trained tokenizer is saved separately to ensure consistent preprocessing during model inference and Gradio deployment.
 
+# Model Training:
+A hybrid deep learning model combining Bidirectional LSTM, Transformer block, and Convolutional Neural Network (CNN) layers is designed to effectively capture both sequential and contextual information from news text. 
+
+- The input layer accepts a padded token sequence of fixed length (256 tokens).
+- An embedding layer converts token indices into dense vector representations of dimension 64. 
+- A Bidirectional LSTM layer captures long-range dependencies from both forward and backward directions in the text.
+- A custom Transformer block is implemented using multi-head self-attention, feed-forward networks, residual connections, layer normalization, and dropout for regularization.
+- A 1D-Convolutional layer is applied to extract local n-gram level features.
+- Global Average Pooling reduces dimensionality and aggregates features.
+- Fully connected dense layers with dropout are used for classification.
+- A sigmoid output layer produces the final probability of the binary classification (FAKE or TRUE).
+
+This architecture leverages the strengths of recurrent neural networks, attention mechanisms, and convolutional layers to improve fake news detection performance. 
+
+
+
+
+
 # Tools: 
 - Jupyter Notebook
 - Gradio
