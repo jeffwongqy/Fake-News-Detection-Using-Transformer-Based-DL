@@ -122,5 +122,10 @@ ADD SCREENSHOT
 - Gradio
 
 # References: 
+Fake News Detection Datasets | ISOT research lab. (2022). Uvic.ca. https://onlineacademiccommunity.uvic.ca/isot/2022/11/27/fake-news-detection-datasets/
+Mo, Y., Qin, H., Dong, Y., Zhu, Z., & Li, Z. (2024). Large Language Model (LLM) AI text generation detection based on transformer deep learning algorithm. ArXiv.org. https://arxiv.org/abs/2405.06652
+
+
+‌
 
 
