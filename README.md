@@ -25,20 +25,17 @@ Class labels are added to both datasets: articles from the TRUE dataset are labe
 3. Dataset Combination
 The TRUE and FAKE datasets are combined into a single dataset using concatenation. This unified dataset contains cleaned text samples along with their corresponding class labels.
 
-4. Tokenization
-
-To convert textual data into a numerical form suitable for deep learning models.
+4. Tokenization: To convert textual data into a numerical form suitable for deep learning models.
 1. A tokenizer is created with a vocabulary size of 20,000 words.
 2. An Out-of-Vocabulary (OOV) token is used to handle unseen words.
 3. The tokenizer is fitted on the cleaned text.
 4. Each news article is converted into a sequence of integers representing word indices.
 
-5. Sequence Padding
-Since text sequences vary in length, padding is applied to ensure uniform input size:
+5. Sequence Padding: Since text sequences vary in length, padding is applied to ensure uniform input size:
 - A maximum sequence length of 256 tokens is defined.
 - Sequences shorter than the maximum length are padded with zeros at the end.
 - Longer sequences are truncated to fit the defined length.
 
 6. Label Encoding
-Since class labels are categorical, label encoding is applied - to convert both TRUE and FAKE labels into numerical values and the encoder is fitted on training labels and applied to test labels to prevent data leakage. 
+Since class labels are categorical, label encoding is applied to convert both TRUE and FALSE labels into numerical values. The encoder is then fitted on the training labels and applied to the test labels to prevent data leakage. 
 
