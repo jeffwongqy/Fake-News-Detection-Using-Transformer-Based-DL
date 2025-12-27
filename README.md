@@ -114,7 +114,9 @@ ADD SCREENSHOT
 # Model Deployment:
 The trained fake news classification model is deployed using a Gradio web application, providing a simple and interactive interface that allows users to input news text and instantly receive predictions indicating whether the news is FAKE or REAL, thereby demonstrating the model’s practical usability in real-time scenarios.
 
-<img src = "Real News Classification.png" width = "800">
+<img src = "Real News Classification .png" width = "800">
+
+<img src = "Fake News Classification.png" width = "800">
 
 
 # Tools: 
