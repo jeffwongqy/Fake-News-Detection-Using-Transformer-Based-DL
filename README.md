@@ -95,6 +95,17 @@ A validation split approach is also used for comparison:
 
 This approach allows faster experimentation and visualization of learning behaviour while maintaining consistency with the cross-validation results. 
 
+# Model Evaluation 
+The performance of the proposed transformer-based fake news classification model was evaluated using standard classification metrics, including precision, recall, F1-score, accuracy, and ROC-AUC. 
+
+(A) Classification Report
+- The model achieved a high precision of 0.98 for FAKE news, indicating that the majority of news articles predicted as fake were correctly classified.
+- For the REAL news class, the model obtained a precision of 0.97 and a recall of 0.98, demonstrating strong capability in correctly identifying real news articles.
+- The recall values for both classes (0.97 for FAKE and 0.98 for REAL) show that the model effectively minimizes false negatives.
+- The F1-scores of 0.97 (FAKE) and 0.98 (REAL) indicate a balanced trade-off between precision and recall for both classes.
+- The model achieved an overall classification accuracy of 98%, correctly classifying 7,730 news articles in the test dataset.
+
+(B) ROC-AUC Curve
 
 
 
