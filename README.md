@@ -40,5 +40,9 @@ The TRUE and FAKE datasets are combined into a single dataset using concatenatio
 - 80% of the data is used for training, and 20% is reserved for testing.
 - A fixed random state ensures reproducibility. 
 
-9. Label Encoding: Since class labels are categorical, label encoding is applied to convert both TRUE and FALSE labels into numerical values. The encoder is then fitted on the training labels and applied to the test labels to prevent data leakage. 
+9. Label Encoding: Since class labels are categorical, label encoding is applied to convert both TRUE and FALSE labels into numerical values. The encoder is then fitted on the training labels and applied to the test labels to prevent data leakage.
+
+10. Saving the Preprocessed Data:
+- The training and testing datasets are saved as a serialized file.
+- The trained tokenizer is saved separately to ensure consistent preprocessing during model inference and Gradio deployment. 
 
